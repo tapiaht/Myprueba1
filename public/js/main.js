@@ -184,11 +184,11 @@ $(document).on("click","#btnModificarSocio", function(){
     $('#FechaRegistro').val(date);
     $('#FechaRegistro').attr("readonly", "readonly");
     $('#modal_socios').modal('show');
-    $("#cerrarModalSocio").click(function(){
+
+});
+$("#cerrarModalSocio").click(function(){
     $("#modal_socios").modal('hide')
     });
-});
-
 
 $(document).on("click","#btnnuevoperiodo", function(){
     $('#titulo_periodo').html('Periodo-Nuevo Registro');
@@ -209,19 +209,21 @@ $(document).on("click","#btnModificarPeriodo", function(){
     Tarifa = $(this).parents("tr").find("td").eq(3).html();
     var date1 = FechaInicio.split(" ")[0];
     var date2 = FechaFinal.split(" ")[0];
-    $('#titulo_periodo').html('Periodos-Modificar Registro');
+    $('#titulo_periodo').html('Periodo-Modificar Registro');
     $('#btnPeriodo').attr("name", "modificar");
     $('#IdPeriodo').val(IdPeriodo);
     $('#IdPeriodo').attr("readonly", "readonly");
     $('#FechaInicio').val(date1);
     $('#FechaFinal').val(date2);
     $('#Tarifa').val(Tarifa);
-    $('#modal_periodos').modal('show');
-    $("#cerrarModalPeriodo").click(function(){
-    $("#modal_Periodo").modal('hide')
-    });
+    $('#modal_periodo').modal('show');
+
+
 });
 
+$("#cerrarModalPeriodo").click(function(){
+    $("#modal_Periodo").modal('hide')
+    });
 
 $(document).on("click","#btnnuevoconsumo", function(){
     $('#titulo_consumo').html('Consumo-Nuevo Registro');
@@ -252,3 +254,7 @@ $(document).on("click","#btnModificarConsumo", function(){
     $('#modal_consumo').modal('show');
 
 });
+
+$("#cerrarModalConsumo").click(function(){
+    $("#modal_Consumo").modal('hide')
+    });
