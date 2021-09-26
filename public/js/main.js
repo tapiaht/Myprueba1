@@ -84,7 +84,7 @@ $(document).ready( function () {
         },
     });
 
-    $('#consumos_data').DataTable({
+    $('#consumo_data').DataTable({
         "responsive": true,
         "language": {
             "sProcessing":     "Procesando...",
@@ -186,7 +186,7 @@ $(document).on("click","#btnModificarSocio", function(){
     $('#modal_socios').modal('show');
 
 });
-$("#cerrarModalSocio").click(function(){
+$("#cerrarModalSocios").click(function(){
     $("#modal_socios").modal('hide')
     });
 
@@ -198,7 +198,7 @@ $(document).on("click","#btnnuevoperiodo", function(){
     $('#FechaInicio').removeAttr("readonly");
     $('#FechaFinal').removeAttr("readonly");
     $('#periodo_form')[0].reset();
-    $('#modal_periodos').modal('show');
+    $('#modal_periodo').modal('show');
 });
 
 
