@@ -258,3 +258,8 @@ $(document).on("click","#btnModificarConsumo", function(){
 $("#cerrarModalConsumo").click(function(){
     $("#modal_Consumo").modal('hide')
     });
+
+
+        $('#sidebarToggle').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
